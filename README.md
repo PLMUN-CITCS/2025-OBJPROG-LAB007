@@ -86,6 +86,18 @@ Only perform this if this is the first time you will setup your Git Environment
    **File Naming Convention:**
    - `BooleanExpressionsDemo.java`
 
+   **Desired Output**
+   ```txt
+   Is Java fun? true
+   Is homework tiring? false
+   Is 'a' greater than 'b'? false
+   Are 'a' and 'b' equal? false
+   Both conditions (isJavaFun && a<b): true
+   Either condition (isJavaFun || isHomeworkTiring): true
+   Logical NOT of isHomeworkTiring: true
+   Exclusive OR (isJavaFun ^ isHomeworkTiring): true
+   ```
+
    **Notable Observations (to be discussed after completing the exercise):**
    - Pay attention to how the relational and logical operators work. Experiment with different values to see how the results change.
    - The use of parentheses in complex expressions helps to avoid ambiguity and ensures the expressions are evaluated in the intended order.

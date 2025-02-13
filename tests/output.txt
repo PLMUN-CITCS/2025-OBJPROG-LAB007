@@ -1,3 +1,8 @@
-Enter the radius of the circle: Radius: 5.00
-Area: 78.54
-Circumference: 31.42
+Is Java fun? true
+Is homework tiring? false
+Is 'a' greater than 'b'? false
+Are 'a' and 'b' equal? false
+Both conditions (isJavaFun && a<b): true
+Either condition (isJavaFun || isHomeworkTiring): true
+Logical NOT of isHomeworkTiring: true
+Exclusive OR (isJavaFun ^ isHomeworkTiring): true

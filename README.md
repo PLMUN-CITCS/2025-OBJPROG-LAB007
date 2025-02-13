@@ -196,6 +196,9 @@ Only perform this if this is the first time you will setup your Git Environment
        - Compile the code using `javac BooleanExpressionsDemo.java` in your terminal or command prompt.
        - Run the compiled code using `java BooleanExpressionsDemo`.
 
+   **Conclusion**
+   This exercise reinforces the use of boolean variables, relational operators, and logical operators in Java.  These are fundamental building blocks for creating programs that can make decisions based on different conditions.  By combining these elements, you can create complex logic that controls the flow of your program.  Remember to focus on readability, clarity, and proper use of operators to ensure your code is correct and maintainable.
+
 ### **Step 4: Push Changes to GitHub**
 Once you've completed your changes, follow these steps to upload your work to your GitHub repository.
 

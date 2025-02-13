@@ -1,7 +1,7 @@
-# **2025-OBJPROG-LAB006**
-Week 02 - Introduction to Java Programming
+# **2025-OBJPROG-LAB007**
+Week 03-04 - Conditional and Looping Statements
 
-Laboratory # 06 - Guided Coding Exercise: Integrated Exercise – Circle Calculator
+Laboratory # 07 - Guided Coding Exercise 1: Boolean Expressions and Relational/Logical Operators Demo
 
 ## **Instructions**
 
@@ -77,101 +77,112 @@ Only perform this if this is the first time you will setup your Git Environment
 
 ### **Step 3: Complete the Assignment**
 
-**Laboratory # 06 - Guided Coding Exercise: Integrated Exercise – Circle Calculator**
+**Laboratory # 07 - Guided Coding Exercise 1: Boolean Expressions and Relational/Logical Operators Demo**
 
    **Objective:**
-   - Combine variable declarations, input/output, arithmetic expressions, operator precedence, type casting, and the Java `Math` API.
-   - Calculate the area and circumference of a circle given a user-input radius.
+   - Understand boolean literals, variables, and expressions.
+   - Use relational operators (==, !=, >, <, >=, <=) and logical operators (&&, ||, !, ^).
 
    **File Naming Convention:**
-   - `CircleCalculator.java`
+   - `BooleanExpressionsDemo.java`
 
    **Notable Observations (to be discussed after completing the exercise):**
-   - Integrated Exercise: This is an integrated exercise. It shows how the different Java concepts you've learned work together to solve a practical problem. This is a big step in learning to program.
-   - Math.PI: The use of Math.PI is a good example of using predefined constants in Java. It's much better than hardcoding a value for pi.
-   - Math.pow(): The exercise reinforces the use of Math.pow() for calculations involving exponents.
-   - Formatted Output: The emphasis on using System.out.printf() for formatted output is important. Clear, well-formatted output is essential for user-friendly programs.
-   - Problem Decomposition: The step-by-step instructions break the problem down into smaller, manageable parts. This is a good problem-solving strategy in programming.
-   - Real-World Application: Calculating the area and circumference of a circle is a simple but relatable real-world problem. This helps to make the exercise more engaging.
+   - Pay attention to how the relational and logical operators work. Experiment with different values to see how the results change.
+   - The use of parentheses in complex expressions helps to avoid ambiguity and ensures the expressions are evaluated in the intended order.
 
    **Java Programming Best Practices:**
-   - Combining Concepts: This exercise is great because it combines several key Java concepts: variable declaration, input/output, arithmetic expressions, operator precedence, type casting (if needed), and using the Math API. This is how real-world programming works!
-   - Meaningful Variable Names: Use descriptive names like radius, area, and circumference.
-   - Comments: Explain what each section of your code does.
-   - Close the Scanner: Always close the Scanner object (input.close()) when you're finished with it to release system resources.
-   - Formatted Output: Use System.out.printf() for nicely formatted output, especially when dealing with numbers and decimals. The %.2f format specifier is very useful for displaying numbers with two decimal places.
-   - Appropriate Data Types: Use double for calculations involving potentially fractional values like radius, area, and circumference.
-   - Math.PI and Math.pow(): Use Math.PI for the value of pi and Math.pow() for raising a number to a power. These are more accurate and efficient than trying to define these yourself.
+   - Use descriptive variable names.
+   - Comment your code to explain the logic of the boolean expressions.
+   - Use consistent indentation to make your code easier to read.
       
    **Step-by-Step Instructions:**
 
-   1. Import the Scanner Class
-      - Create a file named `CircleCalculator.java`.
-      - At the very top of your file (before the class declaration), import the `Scanner` class.  This allows you to get input from the user.
+   1. Setup Class and Main Method
+      - Create a file named `BooleanExpressionsDemo.java`.
+      - Define the class `BooleanExpressionsDemo` and its `main` method.
       ```Java
-      import java.util.Scanner;
-      ```
-      
-   2. Class and Main Method
-      - Define the class `CircleCalculator` and its main method.
-      ```Java
-      public class CircleCalculator {
+      public class BooleanExpressionsDemo {
           public static void main(String[] args) {
       
           }
       }
       ```
             
-   3. Create a Scanner Object
-      - Inside the `main` method, create a `Scanner` object.  This object will be used to read user input from the console.
+   2. Declare Boolean Variables
+      - Inside the main method, declare a boolean variable named `isSunny` and initialize it to `true`.
+      - Declare another boolean variable named `hasClouds` and initialize it to `false`.
       ```Java
-      Scanner input = new Scanner(System.in);
+      boolean isSunny = true;
+      boolean hasClouds = false;
       ```
 
-   4. Prompt for Radius
-      - Use `System.out.print()` to prompt the user to enter the radius of the circle.
+   3. Declare Integer Variables
+      - Declare an integer variable named `temperature` and initialize it to `25`.
+      - Declare another integer variable named `windSpeed` and initialize it to `15`.
       ```Java
-      System.out.print("Enter the radius of the circle: ");
+      int temperature = 25;
+      int windSpeed = 15;
       ```
 
-   5. Read Radius Input
-      - Use the `nextDouble()` method of your `Scanner` object to read the radius (which can be a decimal) and store it in a double variable named `radius`.
+   4. Relational Expression (Greater Than)
+      - Declare a boolean variable named `isHot`.
+      - Create a relational expression that checks if `temperature` is greater than `30`.  Assign the result to `isHot`.
       ```Java
-      double radius = input.nextDouble();
+      boolean isHot = temperature > 30;
       ```
 
-   6. Calculate Area
-      - Declare a double variable named `area`.
-      - Calculate the area of the circle using the formula: Area = π * r^2.  Use `Math.PI` for π and `Math.pow(radius, 2)` for r^2. Store the result in `area`.
+   5. Relational Expression (Less Than or Equal To)
+      - Declare a boolean variable named `isBreezy`.
+      - Create a relational expression that checks if `windSpeed` is less than or equal to `20`. Assign the result to `isBreezy`.
       ```Java
-      double area = Math.PI * Math.pow(radius, 2);
+      boolean isBreezy = windSpeed <= 20;
       ```
 
-   7. Calculate Circumference
-      - Declare a double variable named `circumference`.
-      - Calculate the circumference of the circle using the formula: Circumference = 2 * π * r. Store the result in `circumference`.
+   6. Logical AND
+      - Declare a boolean variable named `goodWeather`.
+      - Create a logical expression using the `&&` operator. It should check if `isSunny` AND `!hasClouds` (not hasClouds). Assign the result to `goodWeather`.
       ```Java
-      double circumference = 2 * Math.PI * radius;
+      boolean goodWeather = isSunny &&!hasClouds;
       ```
 
-   8. Output Results (Formatted)
-      - Use `System.out.printf()` to print the `radius`, `area`, and `circumference`.  Format the output to two decimal places using `%.2f`.  Include descriptive labels.  `%n` creates a new line.
+   7. Logical OR
+      - Declare a boolean variable named `okWeather`.
+      - Create a logical expression using the `||` operator. It should check if `isSunny` OR `isBreezy`. Assign the result to `okWeather`.
       ```Java
-      System.out.printf("Radius: %.2f%n", radius);
-      System.out.printf("Area: %.2f%n", area);
-      System.out.printf("Circumference: %.2f%n", circumference);
+      boolean okWeather = isSunny || isBreezy;
+      ```
+      
+   8. Logical NOT
+      - Declare a boolean variable named `isCloudy`.
+      - Create a logical expression using the `!` (NOT) operator.  It should check if it is NOT sunny. Assign the result to `isCloudy`.
+      ```Java
+      boolean isCloudy =!isSunny;
+      ```
+      
+   9. Logical XOR
+      - Declare a boolean variable named `variableWeather`.
+      - Create a logical expression using the `^` (XOR) operator. It should check if `isSunny` XOR `hasClouds`. Assign the result to `variableWeather`.
+      ```Java
+      boolean variableWeather = isSunny ^ hasClouds;
       ```
 
-   9. Demonstrate Operator Precedence
-      - Close the `Scanner` object to release resources.
-      ```Java
-      input.close();
-      ```
+   10. Output Results (Formatted)
+      - Use `System.out.println()` to print the values of all the boolean variables with descriptive labels.  Match the labels in the "Desired Output" section.
+   ```Java
+   System.out.println("Is Java fun? " + isJavaFun);
+   System.out.println("Is homework tiring? " + isHomeworkTiring);
+   System.out.println("Is 'a' greater than 'b'? " + isAGreater);
+   System.out.println("Are 'a' and 'b' equal? " + areEqual);
+   System.out.println("Both conditions (isJavaFun && a<b): " + bothTrue);
+   System.out.println("Either condition (isJavaFun || isHomeworkTiring): " + eitherTrue);
+   System.out.println("Logical NOT of isHomeworkTiring: " + notTrue);
+   System.out.println("Exclusive OR (isJavaFun ^ isHomeworkTiring): " + exclusiveOr);
+   ```
 
-   10. Compile and Run
-       - Save the file as `CircleCalculator.java`.
-       - Compile the code using `javac CircleCalculator.java` in your terminal or command prompt.
-       - Run the compiled code using `java CircleCalculator`.
+   12. Compile and Run
+       - Save the file as `BooleanExpressionsDemo.java`.
+       - Compile the code using `javac BooleanExpressionsDemo.java` in your terminal or command prompt.
+       - Run the compiled code using `java BooleanExpressionsDemo`.
 
 ### **Step 4: Push Changes to GitHub**
 Once you've completed your changes, follow these steps to upload your work to your GitHub repository.
@@ -195,7 +206,7 @@ Once you've completed your changes, follow these steps to upload your work to yo
    Write a meaningful commit message:
    
    ```bash
-   git commit -m "Submitting OBJPROG Week 02 - Session 01 - Exercise 05"
+   git commit -m "Submitting OBJPROG Week 04 - Session 01 - Exercise 01"
    ```
    
 4. Push your changes to GitHub:

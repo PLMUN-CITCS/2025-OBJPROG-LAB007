@@ -109,61 +109,61 @@ Only perform this if this is the first time you will setup your Git Environment
       ```
             
    2. Declare Boolean Variables
-      - Inside the main method, declare a boolean variable named `isSunny` and initialize it to `true`.
-      - Declare another boolean variable named `hasClouds` and initialize it to `false`.
+      - Inside the main method, declare a boolean variable named isJavaFun and initialize it to true.
+      - Declare another boolean variable named isHomeworkTiring and initialize it to false.
       ```Java
-      boolean isSunny = true;
-      boolean hasClouds = false;
+      boolean isJavaFun = true;
+      boolean isHomeworkTiring = false;
       ```
 
    3. Declare Integer Variables
-      - Declare an integer variable named `temperature` and initialize it to `25`.
-      - Declare another integer variable named `windSpeed` and initialize it to `15`.
+      - Declare an integer variable named a and initialize it to 15.
+      - Declare another integer variable named b and initialize it to 20.
       ```Java
-      int temperature = 25;
-      int windSpeed = 15;
+      int a = 15;
+      int b = 20;
       ```
 
    4. Relational Expression (Greater Than)
-      - Declare a boolean variable named `isHot`.
-      - Create a relational expression that checks if `temperature` is greater than `30`.  Assign the result to `isHot`.
+      - Declare a boolean variable named isAGreater.
+      - Create a relational expression that checks if a is greater than b. Assign the result to isAGreater.
       ```Java
-      boolean isHot = temperature > 30;
+      boolean isAGreater = a > b;
       ```
 
-   5. Relational Expression (Less Than or Equal To)
-      - Declare a boolean variable named `isBreezy`.
-      - Create a relational expression that checks if `windSpeed` is less than or equal to `20`. Assign the result to `isBreezy`.
+   5. Relational Expression (Equal To)
+      - Declare a boolean variable named areEqual.
+      - Create a relational expression that checks if a is equal to b. Assign the result to areEqual.
       ```Java
-      boolean isBreezy = windSpeed <= 20;
+      boolean areEqual = a == b;
       ```
 
    6. Logical AND
-      - Declare a boolean variable named `goodWeather`.
-      - Create a logical expression using the `&&` operator. It should check if `isSunny` AND `!hasClouds` (not hasClouds). Assign the result to `goodWeather`.
+      - Declare a boolean variable named bothTrue.
+      - Create a logical expression using the && operator. It should check if isJavaFun AND a < b. Assign the result to bothTrue.
       ```Java
-      boolean goodWeather = isSunny &&!hasClouds;
+      boolean bothTrue = isJavaFun && (a < b);
       ```
 
    7. Logical OR
-      - Declare a boolean variable named `okWeather`.
-      - Create a logical expression using the `||` operator. It should check if `isSunny` OR `isBreezy`. Assign the result to `okWeather`.
+      - Declare a boolean variable named eitherTrue.
+      - Create a logical expression using the || operator. It should check if isJavaFun OR isHomeworkTiring. Assign the result to eitherTrue.
       ```Java
-      boolean okWeather = isSunny || isBreezy;
+      boolean eitherTrue = isJavaFun || isHomeworkTiring;
       ```
       
    8. Logical NOT
-      - Declare a boolean variable named `isCloudy`.
-      - Create a logical expression using the `!` (NOT) operator.  It should check if it is NOT sunny. Assign the result to `isCloudy`.
+      - Declare a boolean variable named notTrue.
+      - Create a logical expression using the ! (NOT) operator. It should apply NOT to isHomeworkTiring. Assign the result to notTrue.
       ```Java
-      boolean isCloudy =!isSunny;
+      boolean notTrue =!isHomeworkTiring;
       ```
       
    9. Logical XOR
-      - Declare a boolean variable named `variableWeather`.
-      - Create a logical expression using the `^` (XOR) operator. It should check if `isSunny` XOR `hasClouds`. Assign the result to `variableWeather`.
+      - Declare a boolean variable named exclusiveOr.
+      - Create a logical expression using the ^ (XOR) operator. It should check if isJavaFun XOR isHomeworkTiring. Assign the result to exclusiveOr.
       ```Java
-      boolean variableWeather = isSunny ^ hasClouds;
+      boolean exclusiveOr = isJavaFun ^ isHomeworkTiring;
       ```
 
    10. Output Results (Formatted)
